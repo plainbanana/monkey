@@ -1,8 +1,6 @@
 package lexer
 
 import (
-	"log"
-
 	"github.com/plainbanana/monkey/token"
 )
 
@@ -108,7 +106,6 @@ func (l *Lexer) skipWhitespace() {
 func (l *Lexer) readNumber() string {
 	position := l.position
 	for isDigit(l.ch) {
-		log.Println("in loop")
 		l.readChar()
 	}
 	return l.input[position:l.position]
