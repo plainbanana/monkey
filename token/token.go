@@ -23,8 +23,15 @@ const (
 	INT   = "INT"   // 1234242
 
 	// 演算子
-	ASSIGN = "="
-	PLUS   = "+"
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	BANG     = "!"
+	ASTERISK = "*"
+	SLASH    = "/"
+
+	LT = "<"
+	GT = ">"
 
 	// デリミタ
 	COMMA     = ","
